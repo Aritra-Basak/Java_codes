@@ -1,2 +1,2 @@
 # Java_codes
-This repo is meant for storing all my Java programs
+"A class in Java is where we teach an Object to behave"
