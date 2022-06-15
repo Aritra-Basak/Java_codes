@@ -14,7 +14,7 @@ class A extends Abs
 {
 A()
 {
-super(10);
+super(10);//passsing the value to super class method.
 System.out.println("Constructor of Class A");
 }
 void msg1()
