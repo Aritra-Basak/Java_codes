@@ -17,7 +17,6 @@ public class Duplicate {
 		int j=0,k=0,x=0;
 		for(int l =0;l<str2.length;l++)
 		{
-			
 			String [] str=str2[l].split(" ");//converting string to a string array
 			for(j=0;j<str.length;j++)
 			{
@@ -25,16 +24,16 @@ public class Duplicate {
 				{ 
 					   if(str[j]==null)
 						   continue;
-                        if (str[j].length()==str[k].length())
-                        {
-						if(str[j].equalsIgnoreCase(str[k])) // checks the string despite of different cases.
-						str[k]=null;
-                        }
-                        else
-                        	continue;
+                                           if (str[j].length()==str[k].length())
+                                                  {
+						    if(str[j].equalsIgnoreCase(str[k])) // checks the string despite of different cases.
+						    str[k]=null;
+                                                   }
+                                            else
+                        	               continue;
 						
-						}
-				}
+			          }
+		         }
 			for(x=0;x<str.length;x++)
 			{
 				if(str[x]!=null)
