@@ -5,8 +5,8 @@ public class Duplicate {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in); 
-		System.out.println("Enter the limit");
-		int a =sc.nextInt();
+		System.out.println("Enter the limit"); //how many strings will be stored
+		int a =sc.nextInt(); 
 		sc.nextLine();// we have to write this else sc.nextLine for string input will not work
 		String str2[] =new String[a];
 		System.out.println("Enter the strings");
