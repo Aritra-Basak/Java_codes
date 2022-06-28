@@ -5,7 +5,7 @@ class ThrowsExcep
 	{
 		System.out.println("Inside fun() ");
 		int a =10,b =0;
-    int c=a/b;// throw an exception explicitly            
+                int c=a/b;// throw an exception explicitly            
 	}
 	public static void main(String args[])
 	{
