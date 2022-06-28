@@ -1,21 +1,51 @@
 // Java program to demonstrate working of throws
-class ThrowsExcep
-{
-	static void fun() throws ArithmeticException //the method which causes exception throws the exception
+public class Exception_Handling {
+	static void method1() throws ArithmeticException
 	{
-		System.out.println("Inside fun() ");
-		int a =10,b =0;
-                int c=a/b;// throw an exception explicitly            
+		System.out.println("Inside Method 1");
+		throw new ArithmeticException("Explicitly thrown by me"); // throw is used to throw an exception explicitly using the exception's instance.
 	}
-	public static void main(String args[])
+	static void method2() throws NullPointerException
 	{
+		System.out.println("Inside Method 2");
+		throw new NullPointerException(); // throw is used to throw an exception explicitly using the exception's instance.
+	}
+	static void method3(int a)throws ArithmeticException
+	{
+		System.out.println("Inside Method 3");
+		System.out.println("Answer is :"+(a/0));
+	}
+	
+
+	public static void main(String[] args) {
 		try
 		{
-			fun();
+			method1();
 		}
 		catch(ArithmeticException e)
 		{
-			System.out.println("caught in main.");
+			System.out.println("Inside Catch block");
+			System.out.println(e);
 		}
+		try
+		{
+			method2();
+		}
+		catch(NullPointerException e)
+		{
+			System.out.println("Inside Catch block");
+			System.out.println(e);
+		}
+		try
+		{
+			method3(5);
+		}
+		catch(ArithmeticException e)
+		{
+			System.out.println("Inside Catch block");
+			System.out.println(e);
+		}
+
 	}
+
 }
