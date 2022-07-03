@@ -27,7 +27,7 @@ import java.text.*;
 public class Cogni5 {
 
 	public static void main(String[] args) {
-		DecimalFormat df=new DecimalFormat("0.00");
+		DecimalFormat df=new DecimalFormat("0.00");//for showing 2 decimal places output.
 		Scanner sc = new Scanner(System.in);
 		double sum=0,cost=0;
 		System.out.println("Enter the Number of Ticket:");
@@ -35,10 +35,13 @@ public class Cogni5 {
 		if (a>=5 && a<=40) //checks the no. of tickets
 		{
 			System.out.println("Do you want Refreshment :");
+			System.out.println("Press  Y/y for Yes and N/n for No.");
 			char r  =sc.next().charAt(0);
 			System.out.println("Do you have coupon code :");
+			System.out.println("Press  Y/y for Yes and N/n for No.");
 			char cc= sc.next().charAt(0);
 			System.out.println("Enter the circle.");
+			System.out.println("K circle price: 75/- and Q circle price: 150/-. ");
 			char cr =sc.next().charAt(0);
 			//for circle k
 			if(cr=='k'||cr=='K') 
@@ -70,13 +73,13 @@ public class Cogni5 {
 					if(sum!=0)//proceeds to print only if sum is not 0
 					{
 					sum=sum+(50*a);
-					System.out.println("Ticket Cost is :"+sum);
+					System.out.println("Ticket Cost is :"+df.format(sum));
 				    }
 				}
 				else
 				{
 					if(sum!=0) 
-						System.out.println("Ticket Cost is :"+sum);
+						System.out.println("Ticket Cost is :"+df.format(sum));
 				}
 	
 			}
@@ -87,13 +90,13 @@ public class Cogni5 {
 					if(sum!=0)
 					{
 					sum=sum+(50*a);
-					System.out.println("Ticket Cost is :"+sum);
+					System.out.println("Ticket Cost is :"+df.format(sum));
 				    }
 				}
 				else
 				{
 					if(sum!=0)//proceeds to print only if sum is not 0
-						System.out.println("Ticket Cost is :"+sum);
+						System.out.println("Ticket Cost is :"+df.format(sum));
 				}
 			}
 			
