@@ -1,4 +1,4 @@
-//passing object reference as an argument in the method.
+//Java is always pass-by-value.When we deal with objects we are really dealing with object-handles called references which are passed-by-value as well.
 package placements;
 class Check
 {
