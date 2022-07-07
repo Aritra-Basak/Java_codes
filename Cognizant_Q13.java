@@ -87,6 +87,12 @@ public class Cogni13 {
 			for(int j =0;j<marks.length;j++)//loop for storing the marks in the array
 			{
 				marks[j]=sc.nextInt();
+				if(marks[j]<0 || marks[j]>100)
+				{
+					System.out.println("Invalid Range");
+					System.exit(0);//terminates the whole program
+				}
+					
 			}
 			int max=marks[0];
 			for(int k=1;k<marks.length;k++) //loop for storing the max value of marks
