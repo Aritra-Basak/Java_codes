@@ -21,7 +21,7 @@ public class Unique {
 			for(int j=i+1;j<num.length;j++)
 			{
 				if(num[i]==num[j] && num[i]!='*')
-					num[j]='*'; // replacing the duplicate elements with *
+					num[j]='*'; //replacing the duplicate elements with *
 
 		}
 
