@@ -25,7 +25,7 @@ public class Arr_list {
 		}
 		   System.out.println();
 		//process 3: Using for each loop.
-		for(Integer num:list) // for every element of Integer-"num"  in the array list printing the element.
+		for(int num:list) // for every element of Integer-"num"  in the array list printing the element.
 		{
 			System.out.println(num);
 		}
