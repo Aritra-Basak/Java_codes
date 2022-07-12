@@ -1,5 +1,4 @@
-package placements;
-
+package technicals;
 /*At the security checkpoint, airport security personnel have seized a number of travellers’ belongings. Everything has been thrown into a big box (array). Each product carries a specific level of risk[0,1,2]. The risk severity of the items in this case is represented by an array[] of N integer values. Sorting the elements in the array according to the degrees of danger is the task at hand. Between 0 and 2 are the risk values.
 
 Example :
@@ -28,46 +27,43 @@ Explanation:
 
 In the above example, the input is an array of size N consisting of only 0’s, 1’s and 2s. The output is a sorted array from 0 to 2 based on risk severity.*/
 
-
 import java.util.*;
 
-public class Testing_file {
-	//using bubble sort technique
-	static void sort(int [] a)
-	{
-		int n =a.length;
-		for(int i =0;i<n-1;i++)//to iterate over the array with -1 of the length
+public class TcsQ1 {
+		//using bubble sort technique
+		static void sort(int [] a)
 		{
-			boolean s=false;
-			for(int j =0;j<n-i-1;j++)
+			int n =a.length;
+			for(int i =0;i<n-1;i++)//to iterate over the array with -1 of the length
 			{
-				if(a[j]>a[j+1])
+				boolean s=false;
+				for(int j =0;j<n-i-1;j++)
 				{
-					a[j]=a[j]+a[j+1];
-					a[j+1]=a[j]-a[j+1];
-					a[j]=a[j]-a[j+1];
-					s=true;
+					if(a[j]>a[j+1])
+					{
+						a[j]=a[j]+a[j+1];
+						a[j+1]=a[j]-a[j+1];
+						a[j]=a[j]-a[j+1];
+						s=true;
+					}
 				}
+				if(s==false)
+					break;
 			}
-			if(s==false)
-				break;
+			System.out.println(Arrays.toString(a));
+		
 		}
-		System.out.println(Arrays.toString(a));
-	
-	}
-	public static void main(String[] args)
-	{
-		Scanner sc = new Scanner(System.in);
-		System.out.println("enter the limit");
-		int n =sc.nextInt();
-		int a[]=new int[n];
-		for(int i =0;i<a.length;i++)
+		public static void main(String[] args)
 		{
-			a[i]=sc.nextInt();
-		}
-		sort(a);
-		
-		
+			Scanner sc = new Scanner(System.in);
+			System.out.println("enter the limit");
+			int n =sc.nextInt();
+			int a[]=new int[n];
+			for(int i =0;i<a.length;i++)
+			{
+				a[i]=sc.nextInt();
+			}
+			sort(a);
 	}
-}
 
+}
