@@ -1,10 +1,8 @@
-package technical;
-/*As a=[1,2,3,11,19,5,31,18]
-output=[1,11,19,18]*/
-import java.util.Scanner;
+//prints the elements whose starting digit is one.
+package placements;
+import java.util.*;
 
-public class One {
-
+public class Testing_file {
 	public static void main(String[] args)
 	{
 		Scanner sc = new Scanner(System.in);
@@ -21,29 +19,25 @@ public class One {
 		System.out.println("Elements with 1 is");
 		for(int i =0;i<a.length;i++)
 		{
-			int temp=a[i];
-			int digit=0;
-			//counting the number of digits
-			while(temp!=0)
-			{
-				digit++;
-				temp=temp/10;
-				
-			}
-			//checking whether the 1st digit from Left hand side is one or not.
-				int digit1=digit-1;//consider the number is 121, we need to divide by 100 to check whether the 1st digit from LHS is 1 or not, and the number of digit is 3 so we will do 10^digit-1 to check the division.
+			int digit=(int)(Math.log10(a[i]))+1;//method to find number of digit.
+			
+				int digit1=digit-1;
 				int y= (int) ((int)a[i]/(Math.pow(10, digit1)));
 				
 				if(y==1)
 					one[k++]=a[i];
-				
-			
 		}
-		for(int i =0;i<one.length;i++)
-		{
-			
-			System.out.println(one[i]);
-		}
+			System.out.println(Arrays.toString(one));
 	}
-
 }
+/*enter the limit
+5
+Enter the numbers
+1
+10
+201
+311
+101
+Elements with 1 is
+[1, 10, 101, 0, 0]
+*/
