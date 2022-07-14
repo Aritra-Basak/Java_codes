@@ -11,7 +11,7 @@ public class Binary_search {
 			isAscend=true;
 		else
 			isAscend=false;
-		while(start<end)
+		while(start<=end)
 		{
 			mid =start+(end-start)/2; // we can simply do end + start/2 but in this case it might be possible that the end and start value is so high that i can go out of the integer range.
 			if(ar[mid]==target)
