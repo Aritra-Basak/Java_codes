@@ -51,3 +51,17 @@ public class Binary_Search {
 	}
 
 }
+/*Enter the array size
+6
+Enter the elements in the array in a sorted manner
+1
+2
+2
+2
+2
+2
+[1, 2, 2, 2, 2, 2]
+Enter the target element
+2
+Elements start and end index are:[1, 5]
+*/
