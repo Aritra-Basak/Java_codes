@@ -1,5 +1,5 @@
 //Here we have to find the target element from an array of infinite array.
-//to mimic infinte array we will not work with the length of the array.Instead we will work with part by part of the array.
+//to mimic infinite array we will not work with the length of the array.Instead we will work with part by part of the array.
 package technicals;
 import java.util.*;
 public class Infinite {
