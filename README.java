@@ -1,7 +1,7 @@
 
 "A class in Java is where we teach an Object to behave"
 	
-public class Stuck {
+class Stuck {
 	static void Life()
 	{
 		System.out.println("Eat");
