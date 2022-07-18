@@ -1,6 +1,12 @@
 # Java_codes
 "A class in Java is where we teach an Object to behave"
 
+
+
+
+
+
+
 public class Stuck {
 	static void Life()
 	{
