@@ -1,7 +1,6 @@
 # Java_codes
 "A class in Java is where we teach an Object to behave"
 
-
 public class Stuck {
 	static void Life()
 	{
@@ -10,14 +9,12 @@ public class Stuck {
 		System.out.println("Sleep");
 		Life();
 	}
-	
 	public static void main(String[] args)
 	{
 		boolean alive=true;
 		if(alive)
 		Life();	
 		else
-			System.out.println("R.I.P");
+		System.out.println("R.I.P");
 	}
-
 }
