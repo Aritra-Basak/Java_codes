@@ -20,10 +20,7 @@ public class Sorting {
 		 if(swap==false)// if swap == false that means there was no swapping required in the earlier step so array is sorted it breaks and prints saving or reducing the time complexity
 			 break;
 	 }
-	 for(int i =0;i<arr.length;i++)
-	 {
-		 System.out.println(arr[i]);
-	 }
+	System.out.println(Arrays.toString(arr));
  }
 	public static void main(String[] args) {
 		
