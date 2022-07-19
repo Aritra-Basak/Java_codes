@@ -3,7 +3,7 @@ import java.util.*;
 public class Sorting {
  static void bubble(int arr[])
  {
-	 for(int i =0;i<arr.length-1;i++)//And we iterate the outer loop n-1 time because the first element in the array gets sorted automatically, so we don’t need to iterate for it.
+	 for(int i =0;i<arr.length-1;i++)//We iterate the outer loop less than n-1 time because the samllest element in the array gets sorted automatically, so we don’t need to iterate for it.
 	 {
 		 boolean swap=false;
 		 for(int j =0;j<(arr.length-i-1);j++)// We are iterating less than n-i cause in every iteration the largest element gets sorted to its
