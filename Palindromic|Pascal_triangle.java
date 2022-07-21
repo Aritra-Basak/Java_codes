@@ -20,9 +20,9 @@ public class Pattern {
 				System.out.print(j+" ");
 			}
 			//for printing the number i to 1 in reverse
-			for(int l=i-1;l>=1;l--)
+			for(int j=i-1;j>=1;j--)
 			{
-				System.out.print(l+" ");
+				System.out.print(j+" ");
 			}
 			System.out.println();
 		}
@@ -32,9 +32,10 @@ public class Pattern {
 }
 /*Enter the limit
 5
-    1 
-   1 2 1 
-  1 2 3 2 1 
- 1 2 3 4 3 2 1 
+        1 
+      1 2 1 
+    1 2 3 2 1 
+  1 2 3 4 3 2 1 
 1 2 3 4 5 4 3 2 1 
+
 */
