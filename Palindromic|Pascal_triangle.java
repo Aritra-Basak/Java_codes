@@ -10,9 +10,9 @@ public class Pattern {
 		for(int i=1;i<=a;i++)
 		{
 			//for printing the spaces
-			for(int k =a-i;k>0;k--)
+			for(int k =1;k<=a-i;k++)
 			{
-				System.out.print(" ");
+				System.out.print("  ");
 			}
 			//for printing the number 1 to i
 			for(int j=1;j<=i;j++)
