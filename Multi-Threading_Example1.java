@@ -1,6 +1,7 @@
-/*In the below program we see the use of multi-threading that we are forcing the CPU to use it's multiple cores.
+/*In the below program we see the use of Multi-threading that we are forcing the CPU to use it's multiple cores.
  * We will make the CPU do each task in each cores.
- * By default JAVA runs a thread at every time we run a program and that thread is called Main Thread.  */
+ * By default JAVA runs a thread at every time we run a program and that thread is called Main Thread.
+ * Here in the below program we are using extends Thread class to achieve MultiTHreading */
 package placements;
 class A extends Thread //we are extending this class as thread as to make java run each class in each core i.e. running both the classes parallel.
 {
