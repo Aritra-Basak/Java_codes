@@ -14,12 +14,11 @@ class A extends Thread //we are extending this class as thread as to make java r
 		{
 		System.out.println("Hi");
 		try {
-		Thread.sleep(1000); //this will help to call each run() methods with and interval of 1000ms or 1s so to print the output alternately.
+			Thread.sleep(1000); //this will help to call each run() methods with and interval of 1000ms or 1s so to print the output alternately.
 		    //actually Thread.sleep(); pauses the current thread method for a certain interval of time as mentioned
 		    }
 		catch(Exception e)
 		{
-		//no need to print anything		
 		}
 		}
 	}
@@ -35,8 +34,7 @@ class B extends Thread
 			Thread.sleep(1000);
 		    }
 		catch(Exception e)
-		{
-	        //no need to print anything	
+		{	
 		}
 		}
 	}
@@ -46,14 +44,27 @@ public class MultiThread {
 	public static void main(String[] args) {
 		A obj1 =new A();
 		B obj2= new B();
+		obj1.setName("Thread for Hi");//We are setting the name for each Thread
+		obj2.setName("Thread for Hello");
 		obj1.start();//we can call the start() with object reference of our class because we have inherited all the property of Thread class in ours.
+		System.out.println(obj1.isAlive());//checks whether the mentioned thread is active or not
 		try {
-			Thread.sleep(10);//this will help to call the main to call each start with an interval of 10ms
+			Thread.sleep(10);//this will help the main to call each Thread with an interval of 10ms
 		    }
 		catch(Exception e)
-		{
-		//no need to print anything	
+		{	
 		}
 		obj2.start();
+		System.out.println(obj2.isAlive());
+		try {obj1.join(); } catch(Exception e) {}
+		try {obj2.join(); } catch(Exception e) {} //Main thread will operate when the thread 1 and 2 finishes its works and come to join Main thread.
+		System.out.println(obj1.isAlive());//here the these 2 will return false as the threads are done with there works
+		System.out.println(obj2.isAlive());
+		System.out.println(obj1.getName());//We are getting/printing the name for each Thread
+		System.out.println(obj2.getName());
+		System.out.println("Bye from Main Thread");
+		
 	}
+
 }
+//We are writing all the Threads methods inside a try-catch block to avoid Interrupted Exception in java
