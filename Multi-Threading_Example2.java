@@ -45,7 +45,7 @@ public class MultiThread2 {
 		Thread t2=new Thread(obj2);
 		t1.start();//we need to call the start() with object reference of Thread class
 		try {
-			Thread.sleep(10);//this will help to call the main to call each start with an interval of 10ms
+			Thread.sleep(10);//this will help the main to call each Thread with an interval of 10ms
 		    }
 		catch(Exception e)
 		{
