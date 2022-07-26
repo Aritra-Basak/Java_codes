@@ -69,7 +69,7 @@ public class MindQ1 {
 		{
 			books.add(sc.nextInt());
 		}
-		System.out.println(cost(earnings,books)+"rupees");
+		System.out.println(cost(earnings,books)+" rupees.");
 		
 	}
 
