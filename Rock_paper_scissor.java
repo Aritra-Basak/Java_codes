@@ -1,10 +1,9 @@
-import java.util.Scanner;
-import java.util.Random; // need this to import the random class
+import java.util.*;
 public class Rock_paper_scissor {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		Random ra = new Random();// creating an object ra of type random.
+		Random ra = new Random();// creating an object ra of Random Class.
 		int i =0;
 		System.out.println("Welcome player you are now going to play a rock paper scissor game");
 		System.out.println("Enter how many times do you want to play the game");
