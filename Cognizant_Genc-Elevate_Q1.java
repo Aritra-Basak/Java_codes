@@ -26,13 +26,21 @@ public class GencQ1 {
 			System.out.println(-1);
 		else
 		{
-			char temp;
+			//finding the smallest number which is greater than number at i-1 and smaller than number at i.
+			int target =i-1,min=i;
+			for(int j=i+1;j<n;j++)
+			{
+				if(nc[j]>nc[target] && nc[j]<nc[min])
+				{
+					min=j;
+				}//if no value satisfy this condition then min will be equal to the value of i only and it will be swapped with i-1
+			}
+			//swapping the smallest number in the i to n range and swapping it with i-1 position number
+			swap(nc,target,min);
+			
 			//sorting elements from i to n inside the array
 			Arrays.sort(nc,i,n);//Arrays.sort(array,starting point,till the point);
-			//swapping the nc[i] element with the nc[i-1] element
-			temp =nc[i];
-			nc[i]=nc[i-1];
-			nc[i-1]=temp;
+			
 			for(int l=0;l<nc.length;l++)
 			{
 				System.out.print(nc[l]);
@@ -40,10 +48,17 @@ public class GencQ1 {
 			
 		}
 	}
+	static void swap(char [] nc , int min, int pos)
+	{
+		char temp=nc[pos];
+		nc[pos]=nc[ min];
+		nc[min]=temp;
+		
+	}
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the elements");
+		System.out.println("Enter the number");
 		String num= sc.next();
 		char nc[]=num.toCharArray();
 		int n=nc.length;
