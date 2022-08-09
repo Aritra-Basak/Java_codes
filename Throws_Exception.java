@@ -49,6 +49,10 @@ public class Exception_Handling {
 			System.out.println(e);
 			System.out.println(e.getMessage());
 		}
+		finally
+		{
+			System.out.println("Despite of the fact that an exception is caught or not this block will always run");
+		}
 
 	}
 
