@@ -22,10 +22,12 @@ public class Exception_Handling {
 		{
 			method1();
 		}
-		catch(ArithmeticException e)
+		catch(ArithmeticException e)// basically e is the object reference of ArithmeticException. i.e ArithmeticException e = new ArithmeticException();
 		{
 			System.out.println("Inside Catch block");
 			System.out.println(e);
+			System.out.println(e.getMessage());
+			
 		}
 		try
 		{
@@ -35,6 +37,7 @@ public class Exception_Handling {
 		{
 			System.out.println("Inside Catch block");
 			System.out.println(e);
+			System.out.println(e.getMessage());
 		}
 		try
 		{
@@ -44,6 +47,7 @@ public class Exception_Handling {
 		{
 			System.out.println("Inside Catch block");
 			System.out.println(e);
+			System.out.println(e.getMessage());
 		}
 
 	}
