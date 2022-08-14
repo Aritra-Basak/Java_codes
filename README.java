@@ -15,6 +15,6 @@ class Stuck {
 		if(alive)
 		Life();	
 		else
-		System.out.println("R.I.P");
+		System.out.println("R.I.P...☻");
 	}
 }
