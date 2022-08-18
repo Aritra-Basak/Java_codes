@@ -29,11 +29,8 @@ public class Mountain {
 	
 	System.out.println(Arrays.toString(ar));
 	int index=search(ar);
-	System.out.println("The peak value is at the index: "+index);
+	System.out.println("The peak value is "+ar[index]+" at the index: "+index);
 
 	}
 
 }
-/*[1, 2, 3, 4, 5, 6, 7, 4, 2, 1, -1]
-The peak value is at the index: 6
-*/
