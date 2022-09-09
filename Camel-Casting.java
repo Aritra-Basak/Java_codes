@@ -34,6 +34,7 @@ public class Camel {
 
 
 /*
+Output:
 Enter the String
 HiHello
 In Normal Format:- 
