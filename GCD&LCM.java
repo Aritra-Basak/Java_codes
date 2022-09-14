@@ -11,7 +11,7 @@ double a = sc.nextDouble();
 double b = sc.nextDouble();
 int i =0;
 double gcd=0;
-for( i =2;i<=a && i<=b; i++)//divides both the numbers by i, if the remainder is 0 the number is completely divisible by i  
+for( i =1;i<=a && i<=b; i++)//divides both the numbers by i, if the remainder is 0 the number is completely divisible by i  
 	//Checks that i is present in both or not  and if present then that is only gcd
 {
 	if(a%i==0 && b%i==0)
