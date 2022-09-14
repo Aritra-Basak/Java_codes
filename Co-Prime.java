@@ -6,7 +6,7 @@ public class CO_PRIME {
 	static int GCD(int n , int a)
 	{
 		int gcd=0;
-		for(int i =1; i<n && i<a ; i++)
+		for(int i =1; i<=n && i<=a ; i++)
 		{
 			if(a%i==0 && n%i==0)
 				gcd=i;
