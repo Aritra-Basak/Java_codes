@@ -44,6 +44,7 @@ public class Cipher {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the message that needs to be decoded");
 		String x =sc.next();
 		System.out.println("The code after decoding is : "+ decode(x));
 
