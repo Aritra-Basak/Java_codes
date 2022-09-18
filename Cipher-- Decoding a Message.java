@@ -24,6 +24,7 @@ public class Cipher {
 				list.add(Integer.parseInt(x.substring(i, i+2)));
 			}
 		 }
+		// when the length is odd we break the string in a length of 3
 		 else
 		 {
 			 for(int i =0;i<x.length();i=i+3)
