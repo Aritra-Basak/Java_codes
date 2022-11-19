@@ -9,30 +9,23 @@ public class Sub_String {
 	
 	static int solution(String s)
 	{
-		LinkedHashMap<Character,Integer> list = new LinkedHashMap<>();
-		char [] ch = s.toCharArray();
-		for(char c:ch)
-		{
-			if(list.containsKey(c))
-			{
-				list.put(c, list.get(c)+1);
-			}
-			else
-			{
-				list.put(c, 1);
-			}
-		}
+		HashSet<Character> list = new HashSet<>();
 		
-		//Finding the most appeared character
-		 Character maxKey = null;
-	        for (Character key : list.keySet()) 
-	        {
-	            if (maxKey == null || list.get(key) > list.get(maxKey))
-	            {
-	                maxKey = key;
-	            }
-	        }
-	        return list.get(maxKey);
+		int i =0,count=0;
+		while(i<s.length())
+		{
+			if(list.contains(s.charAt(i)))
+			{
+				count++;
+				list.clear();
+				
+			}
+			
+				
+				list.add(s.charAt(i));	
+			    i++;
+		}
+		return count+1;
 	}
 
 	public static void main(String[] args) {
