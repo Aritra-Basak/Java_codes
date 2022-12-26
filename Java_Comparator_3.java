@@ -14,7 +14,7 @@ class Student {
     double cgpa;
  
     // Parameterized constructor
-    public Student(String Name, Integer Age, Double cgpa)
+    public Student(String Name, Integer Age, Double cgpa) //we are using wrapper class instead of data types because later we will use the .compareTo() function which only works with wrapper class.
     {
  
         // This keyword refers to current instance itself
