@@ -32,7 +32,12 @@ public class J_Comparator_1
 		    	System.out.println(list);
 		    	
 		    	
-		    	
+/*We can also use Comparable<T> interface instead of Comparator<T>, but while using Comparable the Student class or the class which defines the all the values must implement it and
+ * like Comparator<T> we need to override a predefine method of the interface whose name is compareTo(), this only takes one object because with one object we are calling the method and passing another.
+ * we will use this keyword to refer the calling object and the passing object will be called using the object passed as the argument. 
+ * And in case of Comparable we only use Collection.sort(list_name); , we don't need to pass the object of the class that implements Comparable.
+ * And one of the main difference is using Comparator we can create our own sorting logic, but not with Comparable.
+ */
    	
 	    	    }
 		    	
