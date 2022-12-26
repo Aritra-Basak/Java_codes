@@ -38,7 +38,7 @@ class Student {
     @Override 
     public String toString()
     {
-        return "Student{ " + "Name=" + Name + ", Age=" + Age + ", CGPA+"+ cgpa+ " }";
+        return "Student{ " + "Name=" + Name + ", Age=" + Age + ", CGPA="+ cgpa+ " }";
     }
 }
  
@@ -46,13 +46,13 @@ class Student {
     // Helper class implementing Comparator interface
     class StudentSortingComparator implements Comparator<Student> {
  
-        // Method 1
-        // To compare customers
+        // Method
+        // To compare Students
         @Override
         public int compare(Student std1,Student std2)
         {
  
-            // Comparing customers
+            // Comparing students
             int NameCompare = std1.getName().compareTo(std2.getName());
  
             int AgeCompare = std1.getAge().compareTo(std2.getAge());
