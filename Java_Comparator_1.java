@@ -3,12 +3,13 @@ package technicals;
 import java.io.*;
 import java.util.*;
  
-class cmp implements Comparator<Integer>
+class cmp implements Comparator<Integer> //using comparator we can create our won sorting technique, being an interface  we need to implement it.
 {
 
 	@Override
-	public int compare(Integer o1, Integer o2) {
-		return o1-o2;
+	public int compare(Integer o1, Integer o2) { //overriding the method present in the comparator interface
+		return o1-o2; //this will return  a value which will sort the values passed.
+		//for String we need to use .compareTo()
 	}
 	
 }
