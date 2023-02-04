@@ -68,8 +68,8 @@ class Solutions {
 
     public static void main(String[] args){
         
-       Class student = Student.class;// uses class literal, not a function.
-        Method[] methods = student.getDeclaredMethods(); 
+       Class student = Student.class;// uses class literal, not a function.Because if we use normal object creation process with new then we cannot use .getDeclaredmethods()
+        Method[] methods = student.getDeclaredMethods(); //Method type wrapper class to store the method names after retrieving them.
         ArrayList<String> methodList = new ArrayList<>();
         for(Method method : methods)
         {
