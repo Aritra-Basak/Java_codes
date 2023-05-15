@@ -4,14 +4,22 @@ class Add
 	int a = 1;
 	int b = 2;
 	int c=5;
+	Add()
+	{
+		System.out.println("Addition");
+	}
 	public void addition()
 	{
 		System.out.println("Inside Parent Class");
 		System.out.println(a+b+c);
 	}
 }
-class Sub extends Add //inheriting all the values of the parent class
+class Sub extends Add
 {
+	Sub()
+	{
+		System.out.println("Subtraction");
+	}
 	public void subtraction()
 	{
 		System.out.println("Inside Child Class");
@@ -23,10 +31,9 @@ class Sub extends Add //inheriting all the values of the parent class
 public class Training_Testing {
 
 	public static void main(String[] args) {
-Sub s = new Sub();
-    //calling both the classes with the child class obj reference.
-s.addition();
-s.subtraction();
+	Sub s = new Sub();
+	s.addition();
+	s.subtraction(); // when calling the child class both the constructors(parent & child) will be called
 	}
 
 }
