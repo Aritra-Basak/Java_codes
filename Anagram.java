@@ -1,4 +1,5 @@
 //Java program to check whether 3 Strings are Anagram of each other or not.
+//Like listen,silent,tensil are anagram.
 import java.util.*;
 import java.util.*;
 import java.io.BufferedReader;
@@ -36,7 +37,7 @@ class Anagram
     String s1 = br.readLine();
     String s2 = br.readLine();
     String s3 = br.readLine();
-    String out=solve(s1,s2,s3);
+    String out=solve(s1.toLowerCase(),s2.toLowerCase(),s3.toLowerCase());
     System.out.println(out);
 
 	      }
